@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <h1>Weather App</h1>
+
+    <div class="search-row">
+      <input type="text" id="cityInput" placeholder="Enter city name (e.g. Delhi)">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Message area: loading and error messages -->
+    <p id="message"></p>
+
+    <!-- Weather result: hidden until data arrives -->
+    <section id="result" class="hidden">
+      <h2 id="cityName"></h2>
+      <p id="temperature" class="temp"></p>
+      <p id="condition"></p>
+      <div class="details">
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind: <span id="wind"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
